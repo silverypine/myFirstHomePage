@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>회원가입</h1>
+    <!-- form은 형태라는 뜻, action 속성을 사용해 데이터를 전송 ex)<form action="URL"> -->
+    <!-- input은 입력받는 태그, 
+        type 속성에서 먼저 적절한 것을 고르는게 시작 - checkbox 속성 다중선택가능, radio는 둘중 하나, text로 빈칸, password로 안보이는 문자열 가능 
+        name 속성은 이름표, name으로 여러개의 input태그를 하나로 묶을수 있음, 이걸 붙여줘야 전송이됨(url 주소에서 input,name 둘다 확인가능)
+        value 속성은 재량껏 입력
+        submit 속성은 데이터를 전송
+
+    쿼리 스트링: ?전까지는 그주소로 이동하고 그이후는 데이타를 붙여서 전송/ 여러 input결과를 보낼때는 &기호로 묶음 -->
+    <!-- select 태그는 먼저 열고 그중에서 선택하는 방식, option 태그랑 같이쓰고 name 속성은 select에 들어가고 value 속성은 option에 들어감-->
+    <form action="formTagTest.html">
+        <input type="submit" value="전송!">
+    </form>
+</body>
+</html>

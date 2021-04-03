@@ -1,0 +1,41 @@
+<!-- !DOCTYPE html: 웹문서가 어떤 버전의 HTML 언어로 작성되었는지 결정하는 기능 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta charset="utf-8": 각국의 언어가 깨지지 않게하기위해 사용 -->
+    <meta charset="utf-8">
+    <!-- title 태그는 브라우저 상의 제목 -->
+    <title>은솔의 일본어/IT교실</title>
+    <!-- CSS는 head에 들어가고 style태그로 표현 -->
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- h1~h6(head): 제목 태그, 글씨도 진하고 값이 커질수록 폰트 크기도 작아짐 -->
+    <h1>은솔의 일본어/IT교실</h1>
+    <!-- img불러올 때는 src(source:원천)태그와 함께씀 width: 폭, height: 높이, 안에 넣는 값은 픽셀(pixel)개수를 의미, -->
+    <!-- alt 속성: altenitive 대체 보완이라는 뜻 -->
+    <img src="./img/cat1.jpg" alt="상대경로 파일 이미지" width="148" height="195">
+    <!-- a(Anchor tag) 태그는 링크를 의미, href(Hypertext Reference)라는 속성과 같이 사용-->
+    <!-- ul(Unordered List): 순서없는 리스트, ol(Ordered List):순서있는 리스트, li(List): 목록을 만드는 태그 -->
+    <!-- ul type 속성:disk, circle, square / ol type 속성 5가지 선택 가능-->
+    <!-- ./: 현재폴더 ../부모폴더 -->
+    <ul type="circle">
+        <li><a href="./IT/HTML.html">HTML</a></li>
+        <li><a href="./IT/CSS.html">CSS</a></li>
+        <li><a href="./IT/JavaScript.html">JavaScript</a></li>
+    </ul>
+    <ol type="A">
+        <li><a href="./Japanese/hiragana.html">ひらがな</a></li>
+        <li><a href="./Japanese/gatakana.html">ガタカナ</a></li>
+    </ol>
+    <!-- p(paragraph):문단, p태그는 문단과 문단을 나누는데 사용 -->
+    <!-- br(break(Line break)): 줄을 바꾼다는 뜻 -->
+    <p>일본어와 IT에 대해 배운 것을 정리하는 사이트입니다</p>
+    <a href="Sign Up.html">회원가입</a>
+</body>
+</html>
