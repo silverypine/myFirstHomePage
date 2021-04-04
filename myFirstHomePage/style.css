@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+}
+h1 {
+    font-size: 45px;
+    text-align: center; /* align(정렬) */
+    border-bottom: 2px solid grey;
+    margin: 0px;
+    padding: 20px;
+}
+/* #grid ul: 이 웹페이지에 있는 모든 ul중에 부모가 grid인 태그를 선택하는 선택자 */
+#grid ul {
+    border-right: 2px solid grey;
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+    padding-left: 30px;
+}
+a { /* 선택자 중에 우선순위는 가장 낮음, 우선순위가 같으면 가장 밑에 있는 선택자의 명령을 따름*/
+    color: black; /* color = property(속성) / red; - property의 값이라는 뜻에서 property value */
+    text-decoration: none; /*밑줄 없애는 것, 다시 밑줄 넣고 싶으면 text-decoration: underline; */
+}
+.saw { /* class 값이 saw인 태그를 가리키는 선택자 .이 있어야 가능/ 그냥 saw면 이 웹페이지의 모든 saw라는 이름의 태그를 선택하는 선택자*/
+    color: grey;
+}
+#active {
+    color: red;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid #article {
+    padding: 30px;
+}
+@media (max-width: 800px) {
+    #grid {
+        display: block;
+    }
+    h1 {
+        border-bottom: none;
+    }
+    #grid ul {
+        border-right: none;
+    }
+}
